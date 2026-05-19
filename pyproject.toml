@@ -1,6 +1,9 @@
 [project]
 name = "gendiff"
 version = "0.1.0"
+dependencies = [
+    "pytest>=9.0.3",
+]
 
 [project.scripts]
 gendiff = "gendiff.cli:main"
@@ -8,3 +11,8 @@ gendiff = "gendiff.cli:main"
 [tool.setuptools.packages.find]
 include = ["gendiff*", "read_files*"]
 exclude = ["static*"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.13",
+]
