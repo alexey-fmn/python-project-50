@@ -3,3 +3,6 @@ lint:
 
 install:
 	uv sync
+
+test:
+	pytest
