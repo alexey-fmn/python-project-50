@@ -220,4 +220,4 @@ __marimo__/
 .streamlit/secrets.toml
 
 .DStore
-demo1.cast
+*.cast

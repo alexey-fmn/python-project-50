@@ -5,3 +5,5 @@
 [![test](https://github.com/alexey-fmn/python-project-50/actions/workflows/test.yml/badge.svg)](https://github.com/alexey-fmn/python-project-50/actions/workflows/test.yml)
 
 [![asciicast](https://asciinema.org/a/VJz1htuQjoZvuLQY.svg)](https://asciinema.org/a/VJz1htuQjoZvuLQY)
+
+[![asciicast](https://asciinema.org/a/LgxLOTASLpkKsuro.svg)](https://asciinema.org/a/LgxLOTASLpkKsuro)
