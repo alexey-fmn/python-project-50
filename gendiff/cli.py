@@ -1,6 +1,6 @@
 import argparse
 
-from gendiff.diff import generate_diff
+from gendiff.extension_selector import extension_selector
 
 
 def main():
@@ -12,7 +12,7 @@ def main():
 
     args = parser.parse_args()
 
-    return generate_diff(args.file1, args.file2)
+    return extension_selector(args.file1, args.file2)
 
 
 if __name__ == "__main__":

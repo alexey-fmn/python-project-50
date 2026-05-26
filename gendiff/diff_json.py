@@ -1,7 +1,7 @@
 from read_files.jsonreader import JsonReader
 
 
-def generate_diff(file1, file2):
+def generate_diff_json(file1, file2):
     content1 = JsonReader.read(file1)
     content2 = JsonReader.read(file2)
 

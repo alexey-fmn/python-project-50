@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from gendiff.diff import generate_diff
+from gendiff.diff_json import generate_diff_json
 
 
 def test_generate_diff_same_content():
@@ -15,7 +15,7 @@ def test_generate_diff_same_content():
         "}"
     )
 
-    assert generate_diff(file1, file2) == expected
+    assert generate_diff_json(file1, file2) == expected
 
 
 def test_generate_diff_removed_key():
@@ -30,7 +30,7 @@ def test_generate_diff_removed_key():
         "}"
     )
 
-    assert generate_diff(file1, file2) == expected
+    assert generate_diff_json(file1, file2) == expected
 
 
 def test_generate_diff_added_key():
@@ -45,7 +45,7 @@ def test_generate_diff_added_key():
         "}"
     )
 
-    assert generate_diff(file1, file2) == expected
+    assert generate_diff_json(file1, file2) == expected
 
 
 def test_generate_diff_changed_value():
@@ -60,4 +60,4 @@ def test_generate_diff_changed_value():
         "}"
     )
 
-    assert generate_diff(file1, file2) == expected
+    assert generate_diff_json(file1, file2) == expected
