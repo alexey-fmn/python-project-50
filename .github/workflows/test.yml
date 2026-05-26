@@ -15,6 +15,7 @@ jobs:
           run: |
             pip install uv
             make install
-            uv sync --dev
+            pip install pytest
+            pip install pyyaml
         - run: | 
             make test
