@@ -16,5 +16,6 @@ jobs:
             pip install uv
             make install
             pip install ruff
+            pip install pyyaml
         - run: | 
             make lint
