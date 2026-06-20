@@ -8,7 +8,12 @@ def main():
                                                  "and show difference")
     parser.add_argument("file1")
     parser.add_argument("file2")
-    parser.add_argument('-f', '--format', help='set format of output')
+    parser.add_argument(
+        '-f',
+        '--format',
+        default='stylish',
+        help='set format of output'
+    )
 
     args = parser.parse_args()
 

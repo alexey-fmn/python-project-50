@@ -1,9 +1,4 @@
-from read_files.jsonreader import JsonReader
-
-
-def generate_diff_json(file1, file2):
-    content1 = JsonReader.read(file1)
-    content2 = JsonReader.read(file2)
+def flat_stylish(content1=None, content2=None):
 
     all_lines = sorted(set(content1.keys()) | set(content2.keys()))
 

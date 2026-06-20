@@ -10,7 +10,7 @@ dependencies = [
 gendiff = "gendiff.cli:main"
 
 [tool.setuptools.packages.find]
-include = ["gendiff*", "read_files*"]
+include = ["gendiff*", "read_files*", "parsers*"]
 exclude = ["static*"]
 
 [dependency-groups]

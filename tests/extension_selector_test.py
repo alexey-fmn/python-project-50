@@ -4,11 +4,11 @@ from gendiff.extension_selector import extension_selector
 
 
 def test_extension_selector_json(monkeypatch):
-    def mock_generate_diff_json(file1, file2):
+    def mock_generate_diff_json(file1, file2, format_name='stylish'):
         return "json diff"
 
     monkeypatch.setattr(
-        "gendiff.extension_selector.generate_diff_json",
+        "gendiff.extension_selector.generate_diff",
         mock_generate_diff_json,
     )
 
@@ -19,11 +19,11 @@ def test_extension_selector_json(monkeypatch):
 
 @pytest.mark.parametrize("ext", [".yml", ".yaml"])
 def test_extension_selector_yaml(monkeypatch, ext):
-    def mock_generate_diff_yaml(file1, file2):
+    def mock_generate_diff_yaml(file1, file2, format_name='stylish'):
         return "yaml diff"
 
     monkeypatch.setattr(
-        "gendiff.extension_selector.generate_diff_yaml",
+        "gendiff.extension_selector.generate_diff",
         mock_generate_diff_yaml,
     )
 

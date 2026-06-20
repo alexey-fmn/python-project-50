@@ -1,0 +1,4 @@
+host: hexlet.io
+timeout: 50
+proxy:
+  ip: 123.45.67.89
