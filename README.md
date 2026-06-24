@@ -13,3 +13,6 @@
 
 ### Plain
 [![asciicast](https://asciinema.org/a/pPEiBTykVbO3lrcY.svg)](https://asciinema.org/a/pPEiBTykVbO3lrcY)
+
+### JSON
+[![asciicast](https://asciinema.org/a/zZvndFGzQ8ttdBfL.svg)](https://asciinema.org/a/zZvndFGzQ8ttdBfL)
