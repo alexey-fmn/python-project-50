@@ -12,12 +12,13 @@ def main():
         '-f',
         '--format',
         default='stylish',
+        choices=['stylish', 'plain'],
         help='set format of output'
     )
 
     args = parser.parse_args()
 
-    return extension_selector(args.file1, args.file2)
+    return extension_selector(args.file1, args.file2, args.format)
 
 
 if __name__ == "__main__":

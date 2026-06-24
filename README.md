@@ -10,3 +10,6 @@
 
 ### Styilsh
 [![asciicast](https://asciinema.org/a/HvuAdBkKFGh4hfHz.svg)](https://asciinema.org/a/HvuAdBkKFGh4hfHz)
+
+### Plain
+[![asciicast](https://asciinema.org/a/pPEiBTykVbO3lrcY.svg)](https://asciinema.org/a/pPEiBTykVbO3lrcY)
