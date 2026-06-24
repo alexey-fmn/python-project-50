@@ -50,9 +50,9 @@ def test_generate_diff_plain(monkeypatch):
 
 
 def test_generate_diff_unknown_format():
-    with pytest.raises(ValueError, match='Unknown format: json'):
+    with pytest.raises(ValueError, match='Unknown format: uml'):
         generate_diff(
             'file1.json',
             'file2.json',
-            format_name='json',
+            format_name='uml',
         )
