@@ -7,10 +7,10 @@ dependencies = [
 ]
 
 [project.scripts]
-gendiff = "hexlet_code.cli:main"
+gendiff = "gendiff.cli:main"
 
 [tool.setuptools.packages.find]
-include = ["hexlet_code*", "read_files*", "parsers*"]
+include = ["gendiff*", "read_files*", "parsers*"]
 exclude = ["static*"]
 
 [dependency-groups]
