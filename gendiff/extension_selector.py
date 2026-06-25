@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from hexlet_code.generate_diff import generate_diff
+from gendiff.generate_diff import generate_diff
 
 
 def extension_selector(file1, file2, format_name='stylish'):

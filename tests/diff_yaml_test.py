@@ -1,4 +1,4 @@
-from hexlet_code.diff_yaml import generate_diff_yaml
+from gendiff.diff_yaml import generate_diff_yaml
 
 
 def test_generate_diff_yaml(tmp_path):

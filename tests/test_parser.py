@@ -1,4 +1,4 @@
-from hexlet_code.parsers.parse import parse
+from gendiff.parsers.parse import parse
 
 
 def test_parse_json():

@@ -1,4 +1,4 @@
-from hexlet_code.flat_stylish import flat_stylish
+from gendiff.flat_stylish import flat_stylish
 
 
 def test_equal_values():
