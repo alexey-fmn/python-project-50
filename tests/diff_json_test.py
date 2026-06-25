@@ -1,6 +1,6 @@
 import pytest
 
-from gendiff.gen_diff import generate_diff
+from gendiff.generate_diff import generate_diff
 
 
 def test_changed_and_added_keys_json(tmp_path):
