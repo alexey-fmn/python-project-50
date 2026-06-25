@@ -1,6 +1,6 @@
-from gendiff.formatters.json import format_json
-from gendiff.formatters.plain import format_plain
-from gendiff.formatters.stylish import format_stylish
+from hexlet_code.formatters.json import format_json
+from hexlet_code.formatters.plain import format_plain
+from hexlet_code.formatters.stylish import format_stylish
 
 
 def format_diff(diff, format_name):

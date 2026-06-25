@@ -1,21 +1,21 @@
 import pytest
 
-from gendiff.generate_diff import generate_diff
+from hexlet_code.generate_diff import generate_diff
 
 
 def test_generate_diff_stylish(monkeypatch):
     monkeypatch.setattr(
-        'gendiff.generate_diff.parse',
+        'hexlet_code.generate_diff.parse',
         lambda filename: {'file': filename},
     )
 
     monkeypatch.setattr(
-        'gendiff.generate_diff.build_diff',
+        'hexlet_code.generate_diff.build_diff',
         lambda data1, data2: 'tree',
     )
 
     monkeypatch.setattr(
-        'gendiff.generate_diff.format_stylish',
+        'hexlet_code.generate_diff.format_stylish',
         lambda tree: 'stylish result',
     )
 
@@ -26,17 +26,17 @@ def test_generate_diff_stylish(monkeypatch):
 
 def test_generate_diff_plain(monkeypatch):
     monkeypatch.setattr(
-        'gendiff.generate_diff.parse',
+        'hexlet_code.generate_diff.parse',
         lambda filename: {'file': filename},
     )
 
     monkeypatch.setattr(
-        'gendiff.generate_diff.build_diff',
+        'hexlet_code.generate_diff.build_diff',
         lambda data1, data2: 'tree',
     )
 
     monkeypatch.setattr(
-        'gendiff.generate_diff.format_plain',
+        'hexlet_code.generate_diff.format_plain',
         lambda tree: 'plain result',
     )
 

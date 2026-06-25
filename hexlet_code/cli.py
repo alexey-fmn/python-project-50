@@ -1,6 +1,6 @@
 import argparse
 
-from gendiff.extension_selector import extension_selector
+from hexlet_code.extension_selector import extension_selector
 
 
 def main():

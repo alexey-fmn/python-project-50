@@ -1,6 +1,6 @@
 import pytest
 
-from gendiff.extension_selector import extension_selector
+from hexlet_code.extension_selector import extension_selector
 
 
 def test_extension_selector_json(monkeypatch):
@@ -8,7 +8,7 @@ def test_extension_selector_json(monkeypatch):
         return "json diff"
 
     monkeypatch.setattr(
-        "gendiff.extension_selector.generate_diff",
+        "hexlet_code.extension_selector.generate_diff",
         mock_generate_diff_json,
     )
 
@@ -23,7 +23,7 @@ def test_extension_selector_yaml(monkeypatch, ext):
         return "yaml diff"
 
     monkeypatch.setattr(
-        "gendiff.extension_selector.generate_diff",
+        "hexlet_code.extension_selector.generate_diff",
         mock_generate_diff_yaml,
     )
 
