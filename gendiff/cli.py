@@ -4,21 +4,23 @@ from gendiff.extension_selector import extension_selector
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Compare two files "
-                                                 "and show difference")
+    parser = argparse.ArgumentParser(
+        description="Compare two files and show difference"
+    )
     parser.add_argument("file1")
     parser.add_argument("file2")
     parser.add_argument(
-        '-f',
-        '--format',
-        default='stylish',
-        choices=['stylish', 'plain', 'json'],
+        "-f",
+        "--format",
+        default="stylish",
+        choices=["stylish", "plain", "json"],
         help='set format of output'
     )
 
     args = parser.parse_args()
 
-    return extension_selector(args.file1, args.file2, args.format)
+    result = extension_selector(args.file1, args.file2, args.format)
+    print(result)
 
 
 if __name__ == "__main__":
