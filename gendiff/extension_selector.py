@@ -4,9 +4,13 @@ from gendiff.generate_diff import generate_diff
 
 
 def extension_selector(file1, file2, format_name='stylish'):
-    if Path(file1).suffix == '.json' and Path(file2).suffix == '.json':
+    ext1 = Path(file1).suffix
+    ext2 = Path(file2).suffix
+
+    if ext1 == '.json' and ext2 == '.json':
         return generate_diff(file1, file2, format_name)
-    elif Path(file1).suffix and Path(file2).suffix in ('.yml', '.yaml'):
+
+    if ext1 in ('.yml', '.yaml') and ext2 in ('.yml', '.yaml'):
         return generate_diff(file1, file2, format_name)
-    else:
-        raise ValueError('Invalid extension')
+
+    raise ValueError('Invalid extension')
